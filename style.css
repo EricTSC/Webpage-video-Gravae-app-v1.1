@@ -23,7 +23,11 @@ footer {
 h1 {
     font-size: 3rem;
     margin: 0;
+}
 
+video {
+  margin: 1rem 0rem;
+  padding: 0.5rem;
 }
 
 .borda {
@@ -50,7 +54,8 @@ h1 {
     width: 0.9rem;
     height: auto;
     fill: #fff;
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
+    margin-top: 0.1rem;
 
 }
 
@@ -82,6 +87,16 @@ h1 {
     padding: 4rem 0rem 4rem 0rem;
 }
 
+#bg_img {
+  align-self: center;
+  position: fixed;
+  margin-top: -1%;
+  width: 100vw;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+
 button {
     background-color: rgba(255, 0, 0, 0);
     color: #fff;
@@ -89,8 +104,8 @@ button {
     font-size: 1rem;
     font-family: 'Open Sans';
     text-decoration: none;
-    width: 20rem;
-    height: 3.5rem;
+    width: 17rem;
+    height: 3rem;
     margin: 0.5rem 0rem 0.5rem 0rem;
     border-radius: 10px;
     border: 2px solid #fff;
@@ -104,8 +119,8 @@ button:hover {
 }
 
 .banners-ads {
-    padding: 4rem 0rem 4rem 0rem;
-    max-width: 95vw;
+    padding: 1.5rem 0rem;
+    max-width: 92vw;
     width: 100%;
 }
 
@@ -144,13 +159,15 @@ button:hover {
     position: relative;
     padding: 15px;
     max-width: 95vw;
+    min-height: 25rem;
+    max-height: 30rem;
     margin: 0 auto;
   }
   
 .gallery-wrapper {
     overflow-x: auto;
-    min-height: 45vh;
-    max-height: 60vh;
+    min-height: 22rem;
+    max-height: 28rem;
   }
   
 .arrow-left, 
@@ -193,20 +210,6 @@ button:hover {
     flex-shrink: 0;
   }
   
-  /* This is from w3schools */
-  /* 
-  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-  /* Hide scrollbar for Chrome, Safari and Opera */
-.gallery-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-.gallery-wrapper {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-  
 /*
 .cyan {
     background: cyan;
@@ -228,8 +231,26 @@ button:hover {
     background: purple;
   }
 */
+
   
-@media screen and (min-width: 450px) {
+/* Abaixo segue o codigo para responsivo de Desktop */
+
+@media screen and (max-width: 449px) {
+
+  /* Hide scrollbar for Chrome, Opera, Safari */
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  } 
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+}
+
+@media screen and (min-width: 450px) { 
 
 section {
   max-width: 750px;
@@ -246,24 +267,14 @@ body {
   position: relative;
   padding: 15px;
   width: 750px;
-  height: 550px;
+  min-height: 33rem;
+  max-height: 40rem;
   margin: 0 auto;
 }
 
 .gallery-wrapper {
-  overflow-x: auto;
-  min-height: 450px;
+  min-height: 475px;
   max-height: 60vh;
-}
-
-.gallery-wrapper::-webkit-scrollbar {
-  display: show;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.gallery-wrapper {
-  -ms-overflow-style: show; /* IE and Edge */
-  scrollbar-width: show; /* Firefox */
 }
 
 .slides img {
@@ -273,19 +284,20 @@ body {
 }
 
 .banners-ads {
-  max-width: 550px;
+  max-width: 650px;
   width: 95vw;
+  margin-bottom: 2rem;
 }
 
 button {
   background-color: rgba(255, 0, 0, 0);
   color: #fff;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: 'Open Sans';
   text-decoration: none;
-  width: 30rem;
-  height: 4.5rem;
+  width: 25rem;
+  height: 3.5rem;
   margin: 0.5rem 0rem 0.5rem 0rem;
   border-radius: 10px;
   border: 2px solid #fff;

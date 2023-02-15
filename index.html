@@ -9,31 +9,56 @@
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./Images/Favicon_Gravae.png">
+
+    <meta property="og:image" content={video.thumbnail} />
+
+    <meta property="og:site_name" content="Gravae" />
+    <meta property="og:title" content="Para os jogadores" />
+    <meta property="og:description"
+        content="Assista replays em alta qualidade das suas melhores (e piores) jogadas de maneira simples e fácil." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+
+    <meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
 </head>
 
 <body>
+    <img id="bg_img" src="./Images/background.svg">
     <section class="section1">
         <img src="./Images/GRAVAE_LOGO(Branco).png" alt="GRAVAE-LOGO" id="logo">
-        <!--  <video id="player-video" src="./Videos/2023-02-03T17-08-09.mp4"></video> -->
-        <iframe id="player-video" width="350px" height="400px" src="https://www.youtube.com/embed/0qGR4CAHx4s"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+
+        <!-- Vídeo fica aqui -->
+        <video autoplay="" controls="" width="100%" muted="">
+            <source
+                src="https://gravae.s3.amazonaws.com/ArenaTest/quadra07_camera01/watermark-1675536689253-2023-02-04T18-42-11.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Botões fica aqui -->
         <a href="https://www.apple.com/br/app-store/" target="_blank"><button>
-            <object class="icons" data="./Images/Apple-Store-icon.svg" type=""></object>
-            Baixe o app para iPhone</button></a>
+                <object class="icons" data="./Images/Apple-Store-icon.svg" type=""></object>
+                Baixe o app para iPhone</button></a>
         <a href="https://play.google.com/store/games?hl=pt_BR" target="_blank"><button>
-            <object class="icons" data="./Images/Playstore-icon.svg" type=""></object>
-            Baixe o app para Android</button></a>
+                <object class="icons" data="./Images/Playstore-icon.svg" type=""></object>
+                Baixe o app para Android</button></a>
+
+        <!-- 1° Anuncio aparece aqui -->
         <img src="./Images/Ad02 (320x100).png" alt="Anuncio-01" class="banners-ads">
 
-    </section>
+        <!-- Seção 02 normalmente vista para quem rola a tela toda pra baixo -->
+    </section> 
     <section class="section2">
         <div class="text-box">
             <h1>Arenas</h1>
             <p>Veja onde encontrar o Gravae</p>
         </div>
 
+        <!-- Carrossel com as imagens e nomes das arenas -->
         <div class="container">
             <!--
             <button class="arrow-left control" aria-label="Previous image">◀</button>
@@ -43,7 +68,7 @@
                 <div class="gallery">
                     <ul class="slides">
                         <li class="item">
-                            <img  src="./Images/Arena 01.png">
+                            <img src="./Images/Arena 01.png">
                             <h2>Nome da Arena</h2>
                             <div style="display: flex; flex-direction: row; margin: -0.3rem;">
                                 <object class="local-icon" data="./Images/Icon Local.svg" type=""></object>
@@ -70,14 +95,18 @@
                 </div>
             </div>
         </div>
+
+        <!-- Botão de suporte + Último anuncio -->
+
     </section>
+
     <section class="section1">
-        <a href="#"><button>Fale com o Gravae</button></a>
+        <a href="#"><button>Fale com a gente</button></a>
         <img src="./Images/Ad01 (320x50).png" alt="Anuncio-02" class="banners-ads">
     </section>
     <footer>
         <p>Desenvolvido por Gravae.io ©</p>
-     </footer>
+    </footer>
 </body>
 
 
