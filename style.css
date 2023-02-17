@@ -21,7 +21,7 @@ footer {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0;
 }
 
@@ -65,16 +65,16 @@ video {
 }
 
 .text-box p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #999999;
     margin: 0;
 }
 
 .local-icon {
-    width: 1.5rem;
+    width: 1.2rem;
+    height: auto;
     margin-left: 0.2rem;
     margin-bottom: -0.5rem;
-    height: auto;
 }
 
 #logo {
@@ -137,6 +137,7 @@ button:hover {
 
 .slides h2 {
     margin: 0.5rem 0rem -0.2rem 0rem;
+    font-size: 1.2rem;
   }
 
 .slides li {
@@ -151,8 +152,9 @@ button:hover {
   
 .slides p {
     text-align: left;
-    margin-top: 14px;
-    font-size: 18px;
+    margin-top: 8px;
+    font-size: 0.8rem;
+
   }
 
 .container {
